@@ -18,46 +18,69 @@
   </style>
 </head>
 
-<body class="flex flex-col w-full min-h-screen justify-start items-center bg-[#f5f5f5] p-0">
+<body class="flex flex-col w-full min-h-screen justify-start items-center bg-[#F9FAFB] p-0">
 
 
-    <header class="flex flex-col md:flex-row w-full h-auto md:h-32 justify-between items-start md:items-center bg-white">
+    <header class="flex flex-col py-0 md:py-2 md:flex-row w-full h-auto md:h-32 justify-between items-start md:items-center bg-white">
 
         
         <h2 class="p-3 md:p-12 text-[20px] font-[700] leading-normal">Famile HEJJAM 2025</h2>
  
         
-        <div class="flex flex-col md:flex-row gap-4 p-4 md:p-12 text-[18px] font-[400]">
-            <h2><a href="#" class="hover:text-blue-900">Home</a></h2>
-            <h2><a href="#" class="hover:text-blue-900">Login</a></h2>
-            <h2><a href="#" class="hover:text-blue-900">Main</a></h2>
+        <div class="flex flex-col md:flex-row gap-4 p-4 md:p-12 text-[18px] font-[50]">
+            <h2><a href="#" class="transition duration-200 hover:text-[#E4A11B] ">Home</a></h2>
+            <h2><a href="#" class="transition duration-200 hover:text-[#E4A11B]">Login</a></h2>
+            <h2><a href="#" class="transition duration-200 hover:text-[#E4A11B]">Main</a></h2>
         </div>
 
 
     </header>
 
 
-    <div class="grid grid-col-1 md:grid-cols-4 p-6 gap-2 border-[1px] rounded-sm">
+    <!-- <div class="container flex flex-row w-[1087px] h-[600px] pr-10" id="slider">
 
-        <img src="images/hoda1.jpeg" alt="" class="w-full h-auto md:w-96 md:h-96 rounded-lg">
-        <img src="images/houda2.jpeg" alt="" class="w-full h-auto md:w-96 md:h-96 rounded-lg">
-        <img src="images/mehdiwalida.jpeg" alt="" class="w-full h-auto md:w-96 md:h-96 rounded-lg">
-        <img src="images/mehdizh.jpeg" alt="" class="w-full h-auto md:w-96 md:h-96 rounded-lg">
-        <img src="images/safa.jpeg" alt="" class="w-full h-auto md:w-96 md:h-96 rounded-lg">
-        <img src="images/safa2.jpeg" alt="" class="w-full h-auto md:w-96 md:h-96 rounded-lg">
-        <img src="images/salma.jpeg" alt="" class="w-full h-auto md:w-96 md:h-96 rounded-lg">
-        <img src="images/walida.jpeg" alt="" class="w-full h-auto md:w-96 md:h-96 rounded-lg">
+
+        <div class="bg-[url(images/hoda1.jpeg)]"></div>
+        <img src="images/houda2.jpeg" class="w-[1087px] pr-24">
+        <img src="images/mehdiwalida.jpeg" class="w-[1087px] pr-24" >
+        <img src="images/safa2.jpeg" class="w-[1087px] pr-24">
+        <img src="images/salma.jpeg" class="w-[1087px] pr-24">
+        <img src="images/walida.jpeg" class="w-[1087px] pr-24">
 
     </div>
 
 
+    Bouton gauche 
+     <button onclick="prevSlide()" class="absolute top-1/2 left-2 -translate-y-1/2 bg-white/70 hover:bg-white text-black px-3 py-2 rounded-full shadow"> &#10094; </button> 
+      Bouton droit 
+      <button onclick="nextSlide()" class="absolute top-1/2 right-2 -translate-y-1/2 bg-white/70 hover:bg-white text-black px-3 py-2 rounded-full shadow"> &#10095; </button>
+--> 
 
-    <div class="flex flex-col md:flex-row justify-center items-center w-full mt-10 p-4 md:p-10 gap-4 pb-10">
+<div class="relative w-full md:w-[1200px] h-auto overflow-hidden rounded-xl shadow-lg shadow-black mt-6 bg-white"> <!-- Images --> 
+
+    <div class="flex transition-transform duration-500" id="slider">
+         <img src="images/mehdiwalida.jpeg" class="w-full flex-shrink-0" alt="Photo 1"> 
+         <img src="images/salma.jpeg" class="w-full flex-shrink-0" alt="Photo 2">
+         <img src="images/3aila.jpeg" class="w-full flex-shrink-0" alt="Photo 2">
+         <img src="images/3aila2.jpeg" class="w-full flex-shrink-0" alt="Photo 2">
+         <img src="images/zhoda.jpeg" class="w-full flex-shrink-0" alt="Photo 2">
+         <img src="images/fatima.jpeg" class="w-full flex-shrink-0" alt="Photo 2">
+         <img src="images/fatima2.jpeg" class="w-full flex-shrink-0" alt="Photo 2">
+         
+    
+    </div> 
+    <!-- Bouton gauche --> 
+    <button onclick="prevSlide()" class="absolute top-1/2 left-2 -translate-y-1/2 bg-white/70 hover:bg-white text-black px-3 py-2 rounded-full shadow"> &#10094; </button> 
+    <!-- Bouton droit --> 
+     <button onclick="nextSlide()" class="absolute top-1/2 right-2 -translate-y-1/2 bg-white/70 hover:bg-white text-black px-3 py-2 rounded-full shadow"> &#10095; </button> </div>
+
+
+    <div class="flex flex-col md:flex-row justify-center items-center w-full mt-10 p-4 md:p-10 gap-6">
 
 
         
 
-        <div class="w-full md:w-[33%] p-14 border-[1.5px] bg-white rounded-xl shadow-xl shadow-blue-200">
+        <div class="w-full md:w-[33%] p-10 border-[1.5px] bg-white rounded-xl shadow-xl shadow-blue-200">
 
             <div class="flex flex-row justify-start items-center gap-3">
                 <img src="images/walida.jpeg" alt="" class="w-16 h-16 rounded-full border-[4px] border-green-400">
@@ -65,11 +88,11 @@
             </div>
             
             <h1 class="mt-5 text-[18px] font-[400]">Ma mére</h1>
-            <p class="text-[14px] text-[#76777b] text-left mt-3">A ma femme, qui est mon soutien et mon refuge</p>
+            <p class="text-[14px] text-[#76777b] text-left mt-3">À ma mère, qui m’a appris la force et la tendresse</p>
         </div>
 
 
-        <div class="w-full md:w-[33%] p-14 border-[1.5px] bg-white rounded-xl shadow-xl shadow-green-200">
+        <div class="w-full md:w-[33%] p-10 border-[1.5px] bg-white rounded-xl shadow-xl shadow-blue-200">
 
             <div class="flex flex-row justify-start items-center gap-3">
                 <img src="images/zhoda.jpeg" alt="" class="w-16 h-16 rounded-full border-[4px] border-green-400">
@@ -80,9 +103,11 @@
             <p class="text-[14px] text-[#76777b] text-left mt-3">A ma femme, qui est mon soutien et mon refuge</p>
         </div>
 
+        
 
 
-        <div class="w-full md:w-[33%] p-12 border-[1.5px] bg-white rounded-xl shadow-xl shadow-green-200">
+
+        <div class="w-full md:w-[33%] pt-10 px-10 pb-4 border-[1.5px] bg-white rounded-xl shadow-xl shadow-blue-200">
 
             <div class="flex flex-row justify-start items-center gap-3">
                 <img src="images/hoda1.jpeg" alt="" class="w-16 h-16 rounded-full border-[4px] border-green-400">
@@ -93,16 +118,103 @@
             <p class="text-[14px] text-[#76777b] text-left mt-3">A ma fille, qui illumine mes journées de son innocence et de sa joie </p>
         </div>
 
+
+
+
+        
+
         
 
 
     </div>
+
+
+
+
+    <div class="flex flex-col md:flex-row justify-center items-center w-full mt-1 p-4 md:p-10 gap-6 pb-10">
+
+
+        
+
+        <div class="w-full md:w-[33%] p-10 border-[1.5px] bg-white rounded-xl shadow-xl shadow-blue-200">
+
+            <div class="flex flex-row justify-start items-center gap-3">
+                <img src="images/fatimaz.jpeg" alt="" class="w-16 h-16 rounded-full border-[4px] border-green-400">
+                <h1 class="text-[18px] font-[800]">Fatima Zahra</h1>
+            </div>
+            
+            <h1 class="mt-5 text-[18px] font-[400]">Ma soeur</h1>
+            <p class="text-[14px] text-[#76777b] text-left mt-3">Toujours protectrice et pleine de sagesse</p>
+        </div>
+
+
+        <div class="w-full md:w-[33%] pt-10 px-10 pb-4 border-[1.5px] bg-white rounded-xl shadow-xl shadow-blue-200">
+
+            <div class="flex flex-row justify-start items-center gap-3">
+                <img src="images/salma.jpeg" alt="" class="w-16 h-16 rounded-full border-[4px] border-green-400">
+                <h1 class="text-[18px] font-[800]">Salma</h1>
+            </div>
+            
+            <h1 class="mt-5 text-[18px] font-[400]">Ma soeur</h1>
+            <p class="text-[14px] text-[#76777b] text-left mt-3">Avec son énergie et sa bonne humeur qui illuminent nos journées</p>
+        </div>
+
+        
+
+
+
+        <div class="w-full md:w-[33%] pt-10 px-10 pb-4 border-[1.5px] bg-white rounded-xl shadow-xl shadow-blue-200">
+
+            <div class="flex flex-row justify-start items-center gap-3">
+                <img src="images/safa.jpeg" alt="" class="w-16 h-16 rounded-full border-[4px] border-green-400">
+                <h1 class="text-[18px] font-[800]">Safa</h1>
+            </div>
+            
+            <h1 class="mt-5 text-[18px] font-[400]">Ma soeur</h1>
+            <p class="text-[14px] text-[#76777b] text-left mt-3">Dont la douceur et l’innocence apportent joie et tendresse à toute la famille </p>
+        </div>
+
+
+
+
+        
+
+        
+
+
+    </div>
+
+
+
+
+
+    <script>
+        const slider = document.getElementById("slider");
+        const slides = slider.children.length;
+        let index = 0;
+    
+        function showSlide() {
+            const slideWidth = slider.parentElement.offsetWidth; // largeur dynamique du conteneur
+            slider.style.transform = `translateX(-${index * slideWidth}px)`;
+            slider.style.transition = "transform 0.5s ease"; // animation fluide
+        }
+    
+        function nextSlide() {
+            index = (index + 1) % slides;
+            showSlide();
+        }
+    
+        function prevSlide() {
+            index = (index - 1 + slides) % slides;
+            showSlide();
+        }
+    
+        // Ajuste automatiquement si on redimensionne la fenêtre
+        window.addEventListener("resize", showSlide);
+    </script>
     
 
 
 </body>
 
 </html>
-
-
-
